@@ -1,11 +1,119 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Other Project</title>
-	</head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Non-CS Assignment</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      line-height: 1.6;
+    }
+    .assignment-container {
+      max-width: 800px;
+      margin: auto;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    .pdf-viewer {
+      margin: 20px 0;
+      text-align: center;
+    }
+    iframe {
+      width: 100%;
+      height: 500px;
+      border: 1px solid #ccc;
+    }
+    .reflection {
+      background: #f9f9f9;
+      padding: 15px;
+      border-left: 4px solid #007acc;
+      margin-top: 20px;
+    }
+    button {
+      background: #007acc;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    button:hover {
+      background: #005f99;
+    }
+    /* Hidden class for accessibility toggle */
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation bar -->
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="project1.html">Projects</a></li>
+        <li><a href="essay.html">Reflection Essay</a></li>
+        <li><a href="assignment.html" class="active">Non-CS Assignment</a></li>
+      </ul>
+    </nav>
+  </header>
 
-	<body>
-	<h1>Other Project - Project Summary </h1>
-	<p>Project details</p>
-	</body>
+  <div class="assignment-container">
+    <h1>Non-CS Assignment</h1>
+
+    <p>
+      This page showcases an assignment from outside of computer science. The
+      work demonstrates transferable skills such as research, writing, and
+      critical thinking, and connects to my capstone project by highlighting
+      interdisciplinary perspectives.
+    </p>
+
+    <!-- PDF Viewer -->
+    <div class="pdf-viewer" aria-labelledby="pdf-heading">
+      <h2 id="pdf-heading">Assignment Document</h2>
+      <iframe
+        src="assignment.pdf"
+        title="Non CS Assignment PDF showing research and analysis"
+        role="document"
+        aria-describedby="pdf-desc"
+      >
+        Your browser does not support inline PDFs. Use the link below to download the file.
+      </iframe>
+      <p id="pdf-desc">
+        Embedded PDF of the non-CS assignment. Use the download link if embedding is not supported.
+      </p>
+      <p>
+        <a href="assignment.pdf" download="non-cs-assignment.pdf" rel="noopener noreferrer">
+          Download Assignment (PDF)
+        </a>
+      </p>
+    </div>
+
+    <!-- Reflection Section -->
+    <div class="reflection" role="region" aria-labelledby="reflection-heading" aria-live="polite">
+      <h2 id="reflection-heading">Reflection</h2>
+      <p id="reflection-text">
+        This assignment helped me strengthen my ability to analyze complex issues and communicate ideas clearly. These skills directly support my capstone project, where clarity and interdisciplinary thinking are essential.
+      </p>
+      <button id="reflection-toggle" aria-expanded="true" aria-controls="reflection-text">Show/Hide Reflection</button>
+    </div>
+  </div>
+
+  <script>
+    // Accessible toggle for reflection
+    const toggle = document.getElementById('reflection-toggle');
+    const text = document.getElementById('reflection-text');
+    toggle.addEventListener('click', () => {
+      const hidden = text.classList.toggle('hidden');
+      toggle.setAttribute('aria-expanded', String(!hidden));
+    });
+  </script>
+</body>
 </html>
+
