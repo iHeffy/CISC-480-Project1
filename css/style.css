@@ -18,12 +18,7 @@ P {
     box-sizing: border-box;
 }
 
-body {
-    background-color: rgb(253, 254, 255);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 
 .full {
     width: 50%;
@@ -72,11 +67,6 @@ hr.solid {
     border-top: 3px solid rgb(0, 0, 0);
 }
 
-body {
-	font-family: Arial, sans-serif;
-	margin: 40px;
-}
-
 h1 {
 	text-align: center;
 }
@@ -120,12 +110,6 @@ pre {
 	margin-bottom: 40px;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    line-height: 1.6;
-}
-
 .assignment-container {
     max-width: 800px;
     margin: auto;
@@ -167,12 +151,12 @@ button:hover {
     background: #005f99;
 }
     
- /* Hidden class for accessibility toggle */
+ /* hidden class for accessibility toggle */
 .hidden {
     display: none;
 }
 
-/* Project Showcase Layout */
+/* project Showcase Layout */
 .project-showcase {
     background-color: #a0d0a3;
     padding: 2rem;
@@ -425,5 +409,4 @@ a:hover {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
-
 */
