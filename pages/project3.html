@@ -5,7 +5,8 @@
         <meta name = "viewport" content = "width = device-width, initial-scale = 1"/>
 
         <link rel="stylesheet" href="../css/foundation.css">
-        <link rel="stylesheet" href = "../css/style.css"/>
+        <link rel="stylesheet" href="../css/style.css"/>
+        <link rel="stylesheet" href="../css/example.css"/>
 
         <title>Project 3</title>
 </head>
@@ -34,60 +35,79 @@
             </div>
 
             <div class="off-canvas-content" data-off-canvas-content>
-                
-                <div class="grid-container">   
+                <!-- Side padding columns -->
+                <div class="grid-container example-page-container">
                     <div class="grid-x grid-padding-x">
+                        <!-- Left padding column -->
+                        <div class="cell small-0 medium-1 large-2 example-side-padding">
+                        </div>
                         
-                        <div class="cell small-12 large-12" style="background-color: #bdccff;">
-                            <div class="grid-y" style="height: 100%;">
-                                 <div class="assignment-container">
+                        <!-- Main content area -->
+                        <div class="cell small-12 medium-10 large-8">
+                            <div class="grid-y">
+                            
+                                <!-- Header Section -->
+                                <div class="cell example-header">
                                     <h1>Non-CS Assignment</h1>
-
-                                    <p>
-                                        This page showcases an assignment from outside of computer science. The
-                                        work demonstrates transferable skills such as research, writing, and
-                                        critical thinking, and connects to my capstone project by highlighting
-                                        interdisciplinary perspectives.
-                                     </p>
-
-                                    <!-- PDF Viewer -->
-                                    <div class="pdf-viewer" aria-labelledby="pdf-heading">
-                                        <h2 id="pdf-heading">Assignment Document</h2>
-                                            <iframe
+                                    <p class="example-subtitle">This page showcases an assignment from outside of computer science, demonstrating transferable skills and interdisciplinary perspectives</p>
+                                </div>
+                                
+                                <!-- Assignment Overview Section -->
+                                <div class="cell example-content-cell">
+                                    <h3>Assignment Overview</h3>
+                                    <p><strong>Purpose:</strong> This assignment demonstrates transferable skills such as research, writing, and critical thinking.</p>
+                                    <p><strong>Connection:</strong> The work connects to my capstone project by highlighting interdisciplinary perspectives.</p>
+                                    <p><strong>Skills Demonstrated:</strong> Research, analysis, writing, and critical thinking abilities.</p>
+                                </div>
+                                
+                                <!-- PDF Document Section -->
+                                <div class="cell example-content-cell">
+                                    <h3>Assignment Document</h3>
+                                    <div class="example-placeholder">
+                                        <iframe
                                             src="assignment.pdf"
                                             title="Non CS Assignment PDF showing research and analysis"
                                             role="document"
-                                            aria-describedby="pdf-desc">
+                                            aria-describedby="pdf-desc"
+                                            style="width: 100%; height: 500px; border: 1px solid #64faff; border-radius: 0.375rem;">
                                             Your browser does not support inline PDFs. Use the link below to download the file.
-                                             </iframe>
-                                        <p id="pdf-desc">
+                                        </iframe>
+                                        <p id="pdf-desc" style="margin-top: 0.5rem; font-size: 0.9rem; color: #666;">
                                             Embedded PDF of the non-CS assignment. Use the download link if embedding is not supported.
                                         </p>
-                                        <p>
-                                            <a href="assignment.pdf" download="non-cs-assignment.pdf" rel="noopener noreferrer">
+                                        <p style="margin-top: 1rem;">
+                                            <a href="assignment.pdf" download="non-cs-assignment.pdf" rel="noopener noreferrer" style="color: #64faff; text-decoration: none; padding: 0.5rem 1rem; border: 1px solid #64faff; border-radius: 0.25rem; display: inline-block;">
                                                 Download Assignment (PDF)
-                                        </a>
+                                            </a>
                                         </p>
                                     </div>
-
-                             <!-- Reflection Section -->
-    
-                                    <p>
-                                        This assignment helped me strengthen my ability to analyze complex issues and communicate ideas clearly. These skills directly support my capstone project, where clarity and interdisciplinary thinking are essential.
-                                    </p>
-      
                                 </div>
+                                
+                                <!-- Reflection Section -->
+                                <div class="cell example-content-cell">
+                                    <h3>Reflection & Impact</h3>
+                                    <p>This assignment helped me strengthen my ability to analyze complex issues and communicate ideas clearly. These skills directly support my capstone project, where clarity and interdisciplinary thinking are essential.</p>
+                                    <p>The work demonstrates how non-technical skills complement technical expertise, showing the value of well-rounded education in computer science and related fields.</p>
+                                </div>
+                                
+                                <!-- Assignment Details Section -->
+                                <div class="cell example-content-cell">
+                                    <h3>Assignment Details</h3>
+                                    <div class="example-placeholder">
+                                        <p><strong>Subject Area:</strong> Non-Computer Science Field</p>
+                                        <p><strong>Skills Used:</strong> Research, Writing, Analysis</p>
+                                        <p><strong>Format:</strong> Written Assignment</p>
+                                        <p><strong>Relevance:</strong> Interdisciplinary Learning</p>
+                                    </div>
+                                </div>
+                                
                             </div>
                         </div>
-
-                        <div class="cell small-12 large-12">
-                            <div class="grid-y" style="height: 100%;">
-                                
-                            
-                            </div>
+                        
+                        <!-- Right padding column -->
+                        <div class="cell small-0 medium-1 large-2 example-side-padding">
                         </div>
                     </div>
-                
                 </div>
             </div>
         </div>

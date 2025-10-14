@@ -1,0 +1,106 @@
+html {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/* main content area */
+.project-showcase-container {
+    max-width: 100%;
+}
+
+.project-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.project-description {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.project-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.375rem;
+}
+
+/* sections of the webpage */
+.project-section {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: 0.375rem;
+    border: 1px solid #64faff;
+    width: 100%;
+}
+
+.project-section h3 {
+    color: #00114f;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    border-bottom: 2px solid #64faff;
+    padding-bottom: 0.5rem;
+}
+
+/* media Container */
+.media-container {
+    border-radius: 0.375rem;
+    overflow: hidden;
+}
+
+.project-video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* technical Details */
+.tech-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.tech-item {
+    padding: 0.8rem;
+    background: rgba(100, 250, 255, 0.05);
+    border-radius: 0.25rem;
+    border-left: 2px solid #64faff;
+}
+
+.tech-item p {
+    margin: 0;
+}
+
+/* code snippet section */
+.code-snippet {
+    color: #00114f;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    overflow-x: auto; /* allows the code to scroll horizontally if input is too long*/
+    font-family: 'Courier New', monospace;
+    font-size: 0.85rem;
+    line-height: 1.3;
+    border: 1px solid #64faff;
+    margin: 0;
+}
+
+/* project gallery */
+
+.gallery-image {
+    width: 100%;
+    height: 10rem;
+    object-fit: cover;
+    border-radius: 0.375rem;
+    border: 1px solid #64faff;
+}
+
+.gallery-caption {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+}
+
+/* hover effect for each section */
+.project-section:hover {
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 17, 79, 0.15);
+    transition: box-shadow 0.2s ease;
+}

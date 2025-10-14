@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset = "utf-8"/>
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1"/>
+
+        <link rel="stylesheet" href="./css/foundation.css">
+        <link rel="stylesheet" href="./css/style.css"/>
+        <link rel="stylesheet" href="./css/example.css"/>
+
+        <title>Example Page</title>
+</head>
+
+<body> 
+    <div class="off-canvas-wrapper">
+        <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+
+            <button class="close-button" aria-label="Close menu" type="button" data-close>
+                <span aria-hidden="true">&times;</span>
+            </button>
+
+            <ul class="vertical menu select-page-font">
+                <li><a href="./index.html">Home Page</a></li>
+                <li><a href="./pages/project1.html">Project 1</a></li>
+                <li><a href="./pages/project2.html">Project 2</a></li>
+                <li><a href="./pages/project3.html">Project 3</a></li>
+                <li><a href="./pages/resume.html">Resume</a></li>
+                <li><a href="./pages/essay.html">Essay</a></li>
+                <li><a href="./example.html">Example</a></li>
+            </ul>
+
+        </div>
+
+            <div class="grid-x grid-padding-x">
+                <button type="button" class="cell large-auto button" data-toggle="offCanvas">Open Navigation</button>
+            </div>
+
+            <div class="off-canvas-content" data-off-canvas-content>
+                <!-- Side padding columns -->
+                <div class="grid-container example-page-container">
+                    <div class="grid-x grid-padding-x">
+                        <!-- Left padding column -->
+                        <div class="cell small-0 medium-1 large-2 example-side-padding">
+                        </div>
+                        
+                        <!-- Main content area -->
+                        <div class="cell small-12 medium-10 large-8">
+                            <div class="grid-y">
+                            
+                                <!-- Header Section -->
+                                <div class="cell example-header">
+                                    <h1>Example Page Title</h1>
+                                    <p class="example-subtitle">This is a subtitle or description for the page</p>
+                                </div>
+                                
+                                <!-- Main Content Grid -->
+                                <div class="cell">
+                                    <div class="grid-x grid-padding-x">
+                                        
+                                        <!-- Left Column -->
+                                        <div class="cell small-12 medium-6 example-content-cell">
+                                            <h3>Left Column Title</h3>
+                                            <div class="example-placeholder">
+                                                <p><strong>Placeholder Content:</strong></p>
+                                                <p>Add your content here. This cell can contain:</p>
+                                                <ul>
+                                                    <li>Text content</li>
+                                                    <li>Images</li>
+                                                    <li>Lists</li>
+                                                    <li>Forms</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- Right Column -->
+                                        <div class="cell small-12 medium-6 example-content-cell">
+                                            <h3>Right Column Title</h3>
+                                            <div class="example-placeholder">
+                                                <p><strong>Placeholder Content:</strong></p>
+                                                <p>Add your content here. This cell can contain:</p>
+                                                <ul>
+                                                    <li>Additional text</li>
+                                                    <li>Media content</li>
+                                                    <li>Interactive elements</li>
+                                                    <li>Data displays</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                
+                                <!-- Full Width Section -->
+                                <div class="cell example-content-cell">
+                                    <h3>Full Width Section</h3>
+                                    <div class="example-placeholder">
+                                        <p><strong>Full Width Content Area:</strong></p>
+                                        <p>This section spans the full width of the main content area (excluding side padding). Perfect for:</p>
+                                        <ul>
+                                            <li>Large images or videos</li>
+                                            <li>Tables or data grids</li>
+                                            <li>Call-to-action sections</li>
+                                            <li>Footer content</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <!-- Three Column Section -->
+                                <div class="cell">
+                                    <div class="grid-x grid-padding-x">
+                                        
+                                        <div class="cell small-12 medium-4 example-content-cell">
+                                            <h4>Column 1</h4>
+                                            <div class="example-placeholder">
+                                                <p>First column content placeholder</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="cell small-12 medium-4 example-content-cell">
+                                            <h4>Column 2</h4>
+                                            <div class="example-placeholder">
+                                                <p>Second column content placeholder</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="cell small-12 medium-4 example-content-cell">
+                                            <h4>Column 3</h4>
+                                            <div class="example-placeholder">
+                                                <p>Third column content placeholder</p>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                        <!-- Right padding column -->
+                        <div class="cell small-0 medium-1 large-2 example-side-padding"></div>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <!-- include before closing <body> tag -->
+    <script src="./js/vendor/jquery.js"></script>
+    <script src="./js/vendor/what-input.js"></script>
+    <script src="./js/vendor/foundation.js"></script>
+    <script type="application/javascript">
+        $(document).foundation();
+    </script>
+
+</body>
+
+</html>
